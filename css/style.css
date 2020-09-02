@@ -1,0 +1,1323 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project		:    Julia-dee
+Version		:    1.0
+Primary use	:    Personal Blog
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ Home Page Layout]
+1. Body
+    2. Main Navigation
+        2.1. Header
+    3. Content 
+        3.1. About Me
+        3.2. My Skills
+		3.3. Work Experiance
+		3.4. My Work
+		3.5. How to Work
+		3.6. Freelancer
+		3.7. Contact Me  
+    4. Footer 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ About Me Page Layout]
+1. Body
+    2. Main Navigation
+        2.1. Header
+    3. Content 
+		3.1. Breadcrumb Navigation
+        3.1. Content 
+    4. Footer 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ Blog Page Layout]
+1. Body
+    2. Main Navigation
+    3. Content 
+		3.1. Breadcrumb Navigation
+        3.2. Content 
+			3.2.1. Left Column
+				3.2.1.1. Blog Content
+				3.2.1.2. Blog Pagination
+			3.2.2. Right Column / Sidebar
+				3.2.2.1. Blog Search
+				3.2.2.2. Recent Post
+				3.2.2.3. Blog Category
+				3.2.2.4. Blog Tags
+				3.2.2.5. Blog Archive Date
+    4. Footer 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ Single Blog Page Layout]
+1. Body
+    2. Main Navigation
+    3. Breadcrumb Navigation 
+	4. Blog Title
+	5. Blog Created Date
+	6. Content
+		6.1. Left Column
+			6.1.1. Blog Content
+			6.1.2. Share Blog on Social Media
+			6.1.3. Next/Previous Blog Navigation
+			6.1.4. Releted Blog
+			6.1.5. Blog Comments
+			6.1.6. Blog Comment Reply
+			6.1.7. Leave a Reply Form
+		6.2. Right Column / Sidebar
+			6.2.1. Blog Search
+			6.2.2. Recent Post
+			6.2.3. Blog Category
+			6.2.4. Blog Tags
+			6.2.5. Blog Archive Date 
+    7. Footer 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ Contact Page Layout]
+1. Body
+    2. Main Navigation
+    3. Breadcrumb Navigation 
+	4. Contact Content
+		4.1. Email Address
+		4.2. Phone Number 
+		4.3. Address
+		4.4. Social Icon
+	5. Left Column
+		6.1. Contact Form	
+	6. Right Column	
+		6.1. Google Map  
+    7. Footer 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ 404 Page Layout]
+1. Body
+    2. Main Navigation
+    3. Breadcrumb Navigation 
+	4. Title
+	5. Social Icon
+	6. Home & Contact Button
+	7. Footer
+-------------------------------------------------------------------*/ 
+
+/*------------------------------------------------------------------
+[ Portfolio Page Layout]
+1. Body
+    2. Main Navigation
+    3. Breadcrumb Navigation 
+	4. Content
+		4.1. Portfolio Category Tab
+		4.2. Portfolio Content
+			4.2.1. Portfolio Block
+				4.2.1.1. Portfolio Image
+				4.2.1.2. Portfolio Title
+				4.2.1.3. Portfolio Modal
+	7. Footer
+-------------------------------------------------------------------*/ 
+
+/* Comman CSS for use all pages*/
+
+/* [Typography] */
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-SemiBoldItalic;
+    src: url(../fonts/Montserrat-SemiBoldItalic.ttf);
+}
+a:hover {
+	text-decoration:none !important;
+}
+a:focus {
+    border-color: #f41067 !important;
+	box-shadow: none !important;
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+a{
+	transition:all 320ms ease-in-out;
+	-moz-transition:all 320ms ease-in-out;
+	-ms-transition:all 320ms ease-in-out;
+	-o-transition:all 320ms ease-in-out;
+	-webkit-transition:all 320ms ease-in-out;
+}
+body {
+	background-color:#f4f8fa !important;
+}
+.container-fluid {
+	padding:0px !important;	
+}
+.modal-title {
+	font-family: Montserrat-Bold;
+    color: #f41067;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.modal-body {
+	font-family: Montserrat-Light;
+	color:#868686;
+	text-align:left;
+}
+.pro-date, .pro-client, .pro-category {
+	font-family: Montserrat-Regular !important;
+    color: #f41067 !important;
+    margin-bottom: 0px;
+	text-align:center;
+}
+.model-img {
+	margin:0px auto;
+	width:100%;	
+}
+.modal-footer {
+    justify-content: center !important;
+    border-top: none !important;
+	padding-top:0px !important;
+}
+.btn-close{
+	color: #ffffff;
+    font-family: Montserrat-Medium;
+    padding: 7px 16px 5px 16px;
+    background-color: #f41067;
+    cursor: pointer;
+}
+
+/* Top Page Scrolling Arrow */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffd966;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 11px;
+    top: 7px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #ffc107;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Main Navigation */
+.navbar {
+	padding-top:26px !important;
+	padding-bottom:26px !important;
+	background-color:#FFFFFF;
+}
+.navbar .navbar-nav .nav-item a {
+	font-family: Montserrat-Regular;
+	color:#7d7d7d !important;
+	text-transform:uppercase;
+    position: relative;
+   	display: block;	
+} 
+.navbar-nav>li>a:after {
+	transition:all 320ms ease-in-out;
+	-moz-transition:all 320ms ease-in-out;
+	-ms-transition:all 320ms ease-in-out;
+	-o-transition:all 320ms ease-in-out;
+	-webkit-transition:all 320ms ease-in-out;
+}
+.navbar .navbar-nav .nav-item a span {
+	color:#ffc107 !important;
+}
+.navbar .navbar-nav .nav-item a:hover {
+	color:#f41067 !important;
+}
+.navbar .navbar-nav .nav-item a:hover:after {
+	opacity:1;
+	bottom:4px;
+}	
+.navbar .navbar-nav .nav-item a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 70%;
+    left: 16%;
+    height: 2px;
+    background-color: #f41067;
+    opacity: 0;	
+}	
+.navbar .navbar-nav .nav-item a:before {
+    content: '/';
+    position: absolute;
+    left: -3%;
+	color:#7d7d7d !important;
+}	
+.navbar .navbar-nav .nav-item:first-child a:before {
+	content: none !important;	
+}
+.navbar .navbar-nav .nav-item .active:after {
+	content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 70%;
+    left: 16%;
+    height: 2px;
+    background-color: #f41067;
+    opacity: 1;
+}
+.nav-pills .nav-link.active {
+    background-color: #ffffff !important;
+}
+.navbar .navbar-nav .nav-item .active {
+	color:#f41067 !important;	
+}
+
+/* Footer */
+footer p{
+	font-family: Montserrat-Regular;
+	text-align:center;
+	color: #9b9b9b;
+	text-transform:uppercase;
+}
+
+
+/*=========================================
+		Home Page CSS Start Here
+=========================================*/
+
+/* Header Top Section*/
+.header-top{
+    margin-top:97px;
+    background-image:url(../img/hello-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hello {
+   	background-image:url(../img/hello.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+	padding: 10px 10px 23px 25px;
+	margin-top:90px;
+}
+.hello h2 {
+	color:#ffffff;
+	text-transform:uppercase;
+	font-family: Montserrat-Medium;
+}
+.name h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.name h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+.name h5{
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.resume a {
+	color:#ffffff;
+	font-family: Montserrat-Medium;
+	padding:8px 16px;
+	background-color:#f41067;
+	border:1px solid #f41067;
+}
+.resume a:hover {
+	color:#f41067;
+	border:1px solid #f41067;
+	background-color:#FFFFFF;
+}
+.social {
+	margin-top:90px;
+	background-color:#ffffff;
+	display:inline-block;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.social a {
+	color:#a8b3b9;
+	font-size:24px;
+	padding:5px 10px;
+}
+.social a:first-child {
+	padding-left:18px !important;
+}
+
+.social a:last-child {
+	padding-right:18px;
+}
+.social a:hover {
+	color:#f41067;
+}
+
+/* About Me Section */
+.about-me-heading h1 {
+    padding-right: 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 40px 40px 0px;
+    background-color: #ffffff;
+    display: inline-block;
+    padding-left: 9%;
+}
+.about-me-heading h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.about-me-heading h1 span:last-child{
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+.about-content p {
+	font-family: Montserrat-Light;
+	color:#868686;
+	text-align: justify;
+}
+
+/* My Skills Section */
+.skill {
+	color:#5f5f5f;
+	font-family: Montserrat-Medium;
+}
+.skill span {
+	margin-right: 10px;
+}
+.my-skill-heading h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 40px 0px 0px 40px;
+	background-color: #ffffff;
+	display: inline-block;
+	float:right;
+	padding-right:9%;
+	padding-left:30px;
+}
+#skill-progress {
+	color:#5f5f5f;
+	font-family: Montserrat-Medium;
+}	
+.my-skill-heading h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.my-skill-heading h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:10px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+.skillbar-bar {
+	height:10px;
+	width:0px;
+	background: #ffc107;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+/* Work Exp Section*/
+.work-exp-heading h1 {
+    padding-right: 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 40px 40px 0px;
+    background-color: #ffffff;
+    display: inline-block;
+    padding-left: 9%;
+}
+.work-exp-heading h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.work-exp-heading h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+.list-group.vertical-steps {
+  padding-left:10px;
+}
+.list-group.vertical-steps .list-group-item {
+  border:none;
+  border-left: 2px solid #fbc10a;
+  box-sizing:border-box;
+  border-radius:0;
+  padding-left:20px;
+  padding-right:0px;
+  padding-bottom:20px;  
+  padding-top:0px;
+  background-color: transparent;
+}
+.list-group.vertical-steps .list-group-item.active {
+  background-color:transparent;
+  color:inherit;
+}
+.list-group.vertical-steps .list-group-item:last-child {
+  border-left:3px solid transparent;
+  padding-bottom:0;
+}
+.list-group.vertical-steps .list-group-item::before {
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #fff;
+    content: '';
+    display: inline-block;
+    float: left;
+    height: 17px;
+    line-height: 25px;
+    margin-left: -29px;
+    text-align: center;
+    width: 17px; 
+}
+.list-group.vertical-steps .list-group-item span, 
+.list-group.vertical-steps .list-group-item a {
+  overflow:hidden;
+  padding-top:2px;
+}
+.list-group.vertical-steps .list-group-item.completed {
+	border-left: 1px solid #e8e8e8;
+}
+.list-group.vertical-steps .list-group-item.completed::before {
+    color: #fff;
+    border: 5px solid #fbc10a;
+}
+.list-group-item h4 {
+	font-family: Montserrat-Bold;
+	color: #f41067;
+	margin-right:20px;
+	font-size:24px;
+	float: left 
+}
+.list-group-item span {
+	background-color: #ffc107;
+	padding:3px 10px;
+	color:#ffffff;
+	border-radius:15px;
+	font-size:13px;
+	font-family: Montserrat-SemiBoldItalic;
+}
+.list-group-item h5 {
+	font-family: Montserrat-Medium;
+	color: #5f5f5f;
+	text-transform:uppercase;
+	clear:both;
+	font-size:18px;
+}
+.list-group-item p {
+	 font-family: Montserrat-Light;
+	 color: #868686;
+	 font-size:16px;
+}
+
+/* My Work Section*/
+#my-work {
+	background-color:#FFF;	
+}
+.work-title h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.work-title h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+.tabs-wrapper .nav .nav-item a {
+    padding: 5px 18px;
+    color: #868686;
+    border-radius: 30px;
+    font-family: Montserrat-Regular;
+	display: inline-block;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:13px;
+}
+.tabs-wrapper .nav .nav-item {
+	margin-bottom:8px;	
+}
+.tabs-wrapper .nav .nav-item .active {
+	background-color: #ffc107;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+	height:200px;
+}
+.portfolio-item .portfolio-link img {
+	width:100%;
+	height:100% !important;
+}
+.portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+}
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: #fff;
+}
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+.portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-transform:uppercase;
+    background-color: #fff;
+	font-family: Montserrat-Medium;
+	text-align:center;
+}
+.portfolio-item .portfolio-caption p:hover {
+	color: #f41067;
+}
+.portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+/* How i Work Section */
+.how-i-work-title h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.how-i-work-title h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+#how-work h1 {
+	font-family: Montserrat-Bold;
+	color:#5f5f5f;
+}
+#how-work h6 {
+	font-family: Montserrat-Light;
+	text-transform:uppercase;
+	color: #868686;
+}
+.step-line ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.step-line ul li {
+    float: left;
+    width:25%;
+	display: block;
+	max-width:25%;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+}
+.step-line ul li .step {
+	position:relative;
+}
+.step-line ul li .last-step-img {
+	margin-bottom:5px;
+}
+.step-line ul li .step:after {
+	content: '';
+    position: absolute;
+    height: 1px;
+    color: #666666;
+    width: 105%;
+    background-color: #ffc107;
+    top: 25px;
+}
+.step-line ul li:last-child .step:after {
+	content: none !important;	
+}
+
+/* Freelance Section*/
+#freelance {
+	background-image:url(../img/freelancer-back.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	padding-top: 80px;
+    padding-bottom: 80px;
+	margin-top: 130px;
+}
+.freelance-text h2 {
+	font-family: Montserrat-Regular;
+}
+.freelance-text h2 span {
+	font-family: Montserrat-Bold;
+	color:#ffffff;
+}
+.hire-me a {
+	color:#ffffff;
+	font-family: Montserrat-Medium;
+	padding:8px 16px;
+	background-color:#f41067;
+	border:1px solid #f41067;
+}
+.hire-me a:hover {
+	color:#f41067;
+	border:1px solid #f41067;
+	background-color:#FFFFFF;
+}
+.freelancer-img {
+	position: absolute;
+    top: -172px;
+}	
+
+/* Contact Me Section */
+.contact-heading h1 {
+    padding-right: 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px 40px 40px 0px;
+    background-color: #ffffff;
+    display: inline-block;
+    padding-left: 9%;
+}
+.contact-heading h1 span:first-child {
+	font-family: Montserrat-Light;
+	color:#868686;
+}
+.contact-heading h1 span:last-child {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+#contact-me h4 {
+	font-family: Montserrat-Bold;
+	color:#f41067;
+}
+#contact-me h5 a {
+	font-family: Montserrat-Medium;
+	color:#868686;
+}
+#contact-me h6 {
+	background-color: #ffc107;
+	padding:5px 18px;
+	color:#ffffff;
+	border-radius:15px;
+	display:inline-block;
+	font-family: Montserrat-SemiBoldItalic;
+}
+#contact-me p {
+	font-family: Montserrat-Regular;
+	letter-spacing:1.3px;
+	color:#7a7a7a;
+}
+.contact-social {
+	background-color:#ffffff;
+	padding-top:8px;
+	padding-bottom:8px;
+	display: inline-block;
+}
+.contact-social a {
+	color:#a8b3b9;
+	font-size:24px;
+	padding:5px 10px;
+}
+.contact-social a:first-child {
+	padding-left:18px !important;
+}
+.contact-social a:last-child {
+	padding-right:18px;
+}
+.contact-social a:hover {
+	color:#f41067;
+}
+textarea {
+    resize:none !important;
+}
+.home-contact .form-control {
+	border:1px solid #ffffff !important;
+	border-radius:0px !important;
+	font-family: Montserrat-light;
+	-webkit-transition: width 10s;
+	color:#868686;
+}
+.home-contact .form-btn {
+	color:#ffffff;
+	font-family: Montserrat-Medium;
+	padding:8px 16px 6px 16px;
+	background-color:#f41067;
+	border:1px solid #f41067;
+	cursor:pointer;
+}
+.home-contact .form-btn:hover {
+	color:#f41067;
+	background-color:#ffffff;
+	transition:all 320ms ease-in-out;
+}
+.home-contact .form-control:focus {
+    color: #868686;
+    box-shadow: none !important;
+	border: 1px solid #f41067 !important;
+}
+
+
+/*=========================================
+		Seprate Page CSS Start Here
+=========================================*/
+/* Comman Section CSS For Seprate Page */
+.content-section {
+    margin-top: 100px;
+	margin-bottom:50px;
+}
+.content-section h2 {
+	font-family: Montserrat-Regular;
+	color:#868686;
+}
+.underliner{
+	position:relative;
+	margin-bottom:20px;
+}
+.underliner:before {
+	content:'';
+	position:absolute;
+	width:130px;
+	height:3px;
+	background-color: #ffc107;	
+	bottom: -5px;	
+}
+.content-section p {
+    font-family: Montserrat-Light;
+    color: #868686;
+}
+.seprate-page-title h1 span:first-child {
+    font-family: Montserrat-Light;
+    color: #868686;	
+}
+.seprate-page-title h1 span:last-child {
+    font-family: Montserrat-Bold;
+    color: #f41067;
+}
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: transparent !important;
+	display:block !important;
+}
+ul.breadcrumb li {
+	display: inline;
+	text-align:center;
+	color: #868686;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #868686;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+	color: #f41067;
+}
+
+/*----------------- About Me Page--------------- */
+.quote-box {
+    box-shadow: 2px 2px 2px 2px #E0E0E0; 
+	background-color:#FFF;
+	width:90%;
+	margin:0px auto !important;
+}
+.fa-quote-left {
+	color: #ffc107;	
+	font-size:36px !important;
+	padding:20px 0px;
+}
+.quote-box-content {
+	padding:10px 0px;	
+}
+
+/*---------------- Blog Page ------------------ */
+.blog {
+	padding-top:20px;
+	padding-bottom:20px;
+	border-bottom:1px solid	#868686;
+}
+.blog-title h2 {
+	font-size:28px;	
+}
+.blog .blog-meta p{
+	color: #f41067;
+}
+.blog-image img {
+	width:100%;
+	margin-bottom:20px;	
+}
+.blog-read-more a, 
+.single-blog-post-navigation a {
+	font-family: Montserrat-Bold;
+    color: #f41067;	
+}
+.blog-read-more a:hover, 
+.single-blog-post-navigation a:hover{
+	color: #f41067;
+}
+.blog-read-more a:hover .fa{
+	padding-left:5px;
+	transition:all 320ms ease-in-out;
+}
+.blog-pagination{
+	padding-top:30px;
+	float: right;	
+}
+.blog-pagination .page-link {
+    color: #f41067;
+    background-color: #fff;
+    border: 1px solid #868686;
+	font-family: Montserrat-Bold;
+}
+.blog-pagination .active{
+	color: #ffffff;
+    text-decoration: none;
+    background-color: #f41067;
+    border-color: #868686;	
+}
+.blog-pagination .page-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #f41067;
+    border-color: #868686;
+}
+.blog-search input[type=text] {
+	border-color: #868686;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #868686;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../img/searchicon.png);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+	border-radius: 0px !important;
+    font-family: Montserrat-light;
+    -webkit-transition: width 10s;
+}
+.blog-search input[type=text]:focus {
+	box-shadow: none !important;
+    border: 1px solid #f41067 !important;	
+}
+.blog-sidebar a {
+	font-family: Montserrat-Light;
+	color: #868686;
+}
+.blog-sidebar a:hover {
+	color: #f41067;
+}
+.recent-blog h4,
+.blog-category h4, 
+.blog-tag h4, 
+.blog-archive h4 {
+	font-family: Montserrat-Bold;
+    color: #f41067;
+    font-size: 20px;
+	text-transform:uppercase;	
+}
+.recent-blog p { 
+	font-size:13px;
+	font-weight:700;
+	margin-bottom: 5px;
+	line-height:16px;
+}
+.blog-category ul, 
+.blog-archive ul {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;	
+}
+.blog-tag a{
+	float:left;
+	border:1px solid #f41067;
+	padding:3px 5px;
+	margin-right:5px;
+	margin-bottom:10px;	
+	font-size:14px;
+}
+.blog-tag a:hover {
+	background-color:#f41067;
+	color:#ffffff;
+}
+
+/*------------------ Single Blog Page ----------------- */
+.single-blog-content h4 {
+	font-family: Montserrat-Regular !important;
+    color: #868686 !important;	
+}
+.single-blog-meta p{
+	color: #f41067;
+}
+.single-blog-post-navigation {
+	padding-top:20px;
+	padding-bottom:20px;	
+}
+.single-blog-post-share, .single-blog-releted-post, .single-blog-comment {
+	border-bottom:1px solid	#868686;
+	padding-bottom: 24px;
+}
+.single-blog-releted-post h4, .single-blog-comment h4, .single-blog-comment-form h4 {
+	font-family: Montserrat-Bold;
+    color: #f41067;
+    font-size: 20px;
+	margin-bottom:20px;
+}
+.single-blog-releted-post a {
+	font-family: Montserrat-Light;
+    color: #868686;
+}
+.single-blog-releted-post a:hover {
+	color: #f41067;
+}
+.user-name h6 {
+    font-family: Montserrat-Light;
+    color: #868686;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.user-name {
+	font-size:14px;	
+}
+.cmt-rpl-btn {
+	font-family: Montserrat-Light;
+    color: #868686;	
+}
+.cmt-rpl-btn:hover {
+	color: #f41067;	
+}
+
+/*-------------- Contact-Me Page -----------------*/
+.contact-me h4 a {
+	font-family: Montserrat-Bold;
+    color: #f41067;
+}
+.contact-me hr {
+	width:16%;
+	height:3px;
+	background-color:#ffc107;	
+}
+.contact-me .fa-phone, .contact-me .fa-map-marker {
+	color:#ffc107;	
+}
+.contact-me h6 {
+	font-family: Montserrat-Light;
+    color: #868686;
+	font-weight:bold;
+	font-size:18px;
+	line-height: 1.5em;
+}
+.say-hello {
+	background-color:#FFF;
+	margin-top:20px;
+	margin-bottom:20px;	
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.say-hello h2 {
+    font-family: Montserrat-Bold;
+    color: #f41067;
+}
+.say-hello .form-control, .single-blog-comment-form .form-control {
+	border-radius:0px !important;
+	font-family: Montserrat-light;
+	-webkit-transition: width 10s;
+}
+.say-hello .form-btn, .single-blog-comment-form .form-btn {
+	color:#ffffff;
+	font-family: Montserrat-Medium;
+	padding:8px 16px 6px 16px;
+	background-color:#f41067;
+	border:1px solid #f41067;
+	cursor:pointer;
+}
+.say-hello .form-btn:hover, .single-blog-comment-form .form-btn:hover {
+	color:#f41067;
+	background-color:#ffffff;
+	transition:all 320ms ease-in-out;
+}
+.say-hello .form-control:focus, .single-blog-comment-form .form-control:focus {
+    color: #9b9b9b;
+    box-shadow: none !important;
+	border: 1px solid #f41067 !important;
+}
+
+/* 404 Page */ 
+.not-found-page .not-found {
+	font-family: Montserrat-Bold;
+  	display: table;
+  	margin: 0 auto;
+  	font-size: 7em;
+  	background: linear-gradient(to right, #f41067 50%, #ffc107 50%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	line-height: 200px;
+}
+.not-found-page-button .home-btn {
+	color: #ffffff;
+	font-family: Montserrat-Medium;
+	padding: 8px 24px 6px 24px;
+	background-color: #f41067;
+	border: 1px solid #f41067;
+	cursor: pointer;
+}
+.not-found-page-button .home-btn:hover {
+	color: #f41067;
+	background-color: #ffffff;
+	border: 1px solid #f41067;
+
+}
+.not-found-page-button .contact-btn {
+	color: #ffffff;
+	font-family: Montserrat-Medium;
+	padding: 8px 16px 6px 16px;
+	background-color: #ffc107;
+	border: 1px solid #ffc107;
+	cursor: pointer;
+}
+.not-found-page-button .contact-btn:hover {
+	color: #ffc107;
+	background-color: #ffffff;
+	border: 1px solid #ffc107;
+}
+
+/*=========================================
+		        Media Query
+=========================================*/
+@media only screen and (max-width: 1280px) {
+.about-me-heading h1, .work-exp-heading h1, .contact-heading h1{
+	padding-left:7%;	
+}
+.my-skill-heading h1 {
+    padding-right: 7%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.list-group-item h4 {
+	float: none; 
+}
+.list-group-item h5 {
+    margin-top: 14px;
+}
+.skill span img {
+	width: 40%;	
+}
+.skill{
+	font-size:12px;	
+}
+.about-me-heading h1, 
+.work-exp-heading h1, 
+.contact-heading h1 {
+	padding-left:4%;	
+}
+.my-skill-heading h1 {
+    padding-right: 4%;
+}
+}
+
+@media only screen and (max-width: 992px){
+h1{
+	font-size:30px !important;	
+}
+h2{
+	font-size: 26px !important;	
+}
+h4{
+	font-size: 20px !important;	
+}
+a, p{
+	font-size:14px !important;	
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+}
+.navbar-toggler-icon {
+    width: 1em !important;
+    height: 1.2em !important;
+}
+.navbar-light .navbar-toggler {
+    border-color: #f41067 !important;
+}
+.navbar-toggler:focus {
+    border-color: #f41067 !important;
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+.navbar .navbar-nav .nav-item a:after{
+    content: none;
+}	
+.navbar .navbar-nav .nav-item a:before{
+    content: none;
+}
+.navbar .navbar-nav .nav-item .active:after{
+	content: none;
+}
+.header-top {
+    margin-top: 74px;
+}
+.hello {
+	margin-top: 20px;
+}
+.social {
+    margin-top: 40px;
+}
+#freelance {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.freelancer-img {
+    top: -165px;
+}
+.about-me-heading h1, .work-exp-heading h1, .contact-heading h1 {
+	padding-left:14%;	
+}
+.my-skill-heading h1 {
+    padding-right: 14%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+h2{
+	font-size:24px !important;	
+}
+.about-me-heading h1, .work-exp-heading h1, .contact-heading h1 {
+	padding-left:5%;	
+}
+.list-group-item h4 {
+	float:none !important;	
+}
+.list-group-item h5 {
+	margin-top:10px;
+}
+.my-skill-heading h1 {
+    padding-right: 5%;
+}
+.name h1 {
+	font-size:30px;
+}
+.social {
+    margin-top: 20px;
+}
+#freelance {
+    padding-top: 30px;
+    padding-bottom: 32px;
+}
+.freelancer-img {
+    top: -94px;
+}
+}
+
+@media only screen and (max-width: 690px) {
+.social a, .contact-social a {
+    font-size: 16px;
+}	
+}
+
+@media only screen and (max-width: 576px) {
+.skill span img {
+	width:auto !important;	
+}
+.skill{
+	font-size:14px !important;	
+}
+}
+
+@media only screen and (max-width: 480px) {
+.about-me-heading h1, .work-exp-heading h1, .contact-heading h1 {
+	padding-left:4%;	
+}
+.list-group-item h4 {
+	float:none !important;	
+}
+.list-group-item h5 {
+	margin-top:10px;
+}
+.my-skill-heading h1 {
+    padding-right: 3%;
+}
+.step-line ul li {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+	margin-bottom:30px;
+}
+.step-line ul li .step {
+	display:none;
+}
+.freelancer-img {
+    position: initial;
+}
+#freelance {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+.hire-me {
+	margin-bottom:30px;
+}
+}

@@ -1,0 +1,4 @@
+D:\divyesh\subjects\c_sharp\example\unit2\BitwiseOperator\BitwiseOperator\bin\Debug\BitwiseOperator.exe
+D:\divyesh\subjects\c_sharp\example\unit2\BitwiseOperator\BitwiseOperator\bin\Debug\BitwiseOperator.pdb
+D:\divyesh\subjects\c_sharp\example\unit2\BitwiseOperator\BitwiseOperator\obj\x86\Debug\BitwiseOperator.exe
+D:\divyesh\subjects\c_sharp\example\unit2\BitwiseOperator\BitwiseOperator\obj\x86\Debug\BitwiseOperator.pdb

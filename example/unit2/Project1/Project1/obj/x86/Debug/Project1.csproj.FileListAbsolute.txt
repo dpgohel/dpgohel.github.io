@@ -1,0 +1,10 @@
+D:\divyesh\subjects\c_sharp\example\unit-2\Project1\Project1\bin\Debug\Project1.exe
+D:\divyesh\subjects\c_sharp\example\unit-2\Project1\Project1\bin\Debug\Project1.pdb
+D:\divyesh\subjects\c_sharp\example\unit-2\Project1\Project1\obj\x86\Debug\Project1.exe
+D:\divyesh\subjects\c_sharp\example\unit-2\Project1\Project1\obj\x86\Debug\Project1.pdb
+D:\divyesh\subjects\c_sharp\example\unit-2\Project1\Project1\obj\x86\Debug\Project1.csprojResolveAssemblyReference.cache
+D:\divyesh\subjects\c_sharp\example\unit2\Project1\Project1\obj\x86\Debug\Project1.exe
+D:\divyesh\subjects\c_sharp\example\unit2\Project1\Project1\obj\x86\Debug\Project1.pdb
+D:\divyesh\subjects\c_sharp\example\unit2\Project1\Project1\bin\Debug\Project1.exe
+D:\divyesh\subjects\c_sharp\example\unit2\Project1\Project1\bin\Debug\Project1.pdb
+D:\divyesh\subjects\c_sharp\example\unit2\Project1\Project1\obj\x86\Debug\Project1.csprojResolveAssemblyReference.cache

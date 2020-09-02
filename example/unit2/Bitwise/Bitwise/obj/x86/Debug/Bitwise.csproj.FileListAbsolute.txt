@@ -1,0 +1,4 @@
+D:\divyesh\subjects\c_sharp\example\unit-2\Bitwise\Bitwise\bin\Debug\Bitwise.exe
+D:\divyesh\subjects\c_sharp\example\unit-2\Bitwise\Bitwise\bin\Debug\Bitwise.pdb
+D:\divyesh\subjects\c_sharp\example\unit-2\Bitwise\Bitwise\obj\x86\Debug\Bitwise.exe
+D:\divyesh\subjects\c_sharp\example\unit-2\Bitwise\Bitwise\obj\x86\Debug\Bitwise.pdb

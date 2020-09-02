@@ -1,0 +1,4 @@
+D:\divyesh\subjects\c_sharp\example\unit2\Project2\Project2\bin\Debug\Project2.exe
+D:\divyesh\subjects\c_sharp\example\unit2\Project2\Project2\bin\Debug\Project2.pdb
+D:\divyesh\subjects\c_sharp\example\unit2\Project2\Project2\obj\x86\Debug\Project2.exe
+D:\divyesh\subjects\c_sharp\example\unit2\Project2\Project2\obj\x86\Debug\Project2.pdb

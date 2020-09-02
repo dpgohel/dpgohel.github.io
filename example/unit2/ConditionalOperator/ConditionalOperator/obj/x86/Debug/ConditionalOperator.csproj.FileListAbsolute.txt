@@ -1,0 +1,4 @@
+D:\divyesh\subjects\c_sharp\example\unit2\ConditionalOperator\ConditionalOperator\bin\Debug\ConditionalOperator.exe
+D:\divyesh\subjects\c_sharp\example\unit2\ConditionalOperator\ConditionalOperator\bin\Debug\ConditionalOperator.pdb
+D:\divyesh\subjects\c_sharp\example\unit2\ConditionalOperator\ConditionalOperator\obj\x86\Debug\ConditionalOperator.exe
+D:\divyesh\subjects\c_sharp\example\unit2\ConditionalOperator\ConditionalOperator\obj\x86\Debug\ConditionalOperator.pdb

@@ -1,4 +1,0 @@
-D:\divyesh\subjects\c_sharp\example\unit-2\ShortCircuitOperator\ShortCircuitOperator\bin\Debug\ShortCircuitOperator.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\ShortCircuitOperator\ShortCircuitOperator\bin\Debug\ShortCircuitOperator.pdb
-D:\divyesh\subjects\c_sharp\example\unit-2\ShortCircuitOperator\ShortCircuitOperator\obj\x86\Debug\ShortCircuitOperator.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\ShortCircuitOperator\ShortCircuitOperator\obj\x86\Debug\ShortCircuitOperator.pdb

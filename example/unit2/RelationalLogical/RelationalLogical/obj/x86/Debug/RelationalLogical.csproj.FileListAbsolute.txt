@@ -1,4 +1,0 @@
-D:\divyesh\subjects\c_sharp\example\unit-2\RelationalLogical\RelationalLogical\bin\Debug\RelationalLogical.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\RelationalLogical\RelationalLogical\bin\Debug\RelationalLogical.pdb
-D:\divyesh\subjects\c_sharp\example\unit-2\RelationalLogical\RelationalLogical\obj\x86\Debug\RelationalLogical.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\RelationalLogical\RelationalLogical\obj\x86\Debug\RelationalLogical.pdb

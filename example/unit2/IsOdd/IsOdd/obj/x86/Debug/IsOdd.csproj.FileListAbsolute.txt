@@ -1,4 +1,0 @@
-D:\divyesh\subjects\c_sharp\example\unit-2\IsOdd\IsOdd\bin\Debug\IsOdd.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\IsOdd\IsOdd\bin\Debug\IsOdd.pdb
-D:\divyesh\subjects\c_sharp\example\unit-2\IsOdd\IsOdd\obj\x86\Debug\IsOdd.exe
-D:\divyesh\subjects\c_sharp\example\unit-2\IsOdd\IsOdd\obj\x86\Debug\IsOdd.pdb

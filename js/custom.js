@@ -9,6 +9,11 @@ jQuery(document).ready(function(){
 	});
 });
 
+//won't show img broken icon in chromium based browsers
+$('img').on('error', function() {
+    $(this).replaceWith($(this).prop('alt'));
+})
+
 //Scroll bottom to top
 $(window).scroll(function() {
 	// Author code here

@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+body.dark{
+	background-color: #1d1b1b;
+	color: #a7afbd;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6{
+	color: #fff;
+}
+body.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #a0a4a9;
+}
+body.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #a0a4a9;
+   opacity:  1;
+}
+body.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #a0a4a9;
+   opacity:  1;
+}
+body.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #a0a4a9;
+}
+body.dark ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #a0a4a9;
+}
+body.dark ::placeholder { /* Most modern browsers support this now. */
+   color: #a0a4a9;
+}
+body.dark{
+  scrollbar-color: #494b50 #494b50;
+}
+body.dark:-webkit-scrollbar-track {
+  background: #494b50;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #494b50;
+  border-color: #1d1b1b;
+}
+body.dark .know_tm_modalbox .description_wrap{
+  scrollbar-color: #5c5d64 #5c5d64;
+}
+body.dark .know_tm_modalbox .description_wrap:-webkit-scrollbar-track,
+body.dark .know_tm_fixed_content .mainbar:-webkit-scrollbar-track{
+  background: #5c5d64;
+}
+body.dark .know_tm_modalbox .description_wrap::-webkit-scrollbar-thumb,
+body.dark .know_tm_fixed_content .mainbar::-webkit-scrollbar-thumb{
+  background-color: #5c5d64;
+  border-color: #5c5d64;
+}
+body.dark .know_tm_contact .wrapper .right .input_list ul li input{
+	color: #a0a4a9;
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .know_tm_contact .wrapper .right .input_list ul li input:focus{
+	border: 1px solid rgba(255,255,255,.3);
+}
+body.dark .know_tm_contact .message_area textarea{
+	color: #a0a4a9;
+	border: 1px solid rgba(255,255,255,.15);
+}
+body.dark .know_tm_contact .message_area textarea:focus{
+	border: 1px solid rgba(255,255,255,.3);
+}
+body.dark .know_tm_hero .background_shape{
+	background-color: #34353a;
+}
+body.dark .know_tm_video .circle:after{
+	background-color: rgba(255,255,255,.03);
+}
+body.dark .know_tm_hero .main_menu ul li{
+	background-color: #494b50;
+	box-shadow: none;
+}
+body.dark .know_tm_hero .main_menu ul li.active{
+	background-color: #ff451b;
+}
+body.dark .know_tm_hero .main_menu ul li span{
+	color: #fff;
+}
+body.dark .know_tm_mainpart{
+	background-color: #494b50;
+	box-shadow: none;
+}
+body.dark .know_tm_about .right .bigger_text p{
+	color: #d3d7df;
+}
+body.dark .know_tm_copyright .right ul li a{
+	color: #a7afbd;
+}
+body.dark .know_tm_copyright .right ul li a:hover{
+	color: #ff451b;
+}
+body.dark .know_tm_copyright .left a{
+	color: #a7afbd;
+}
+body.dark .know_tm_copyright .left a:hover{
+	color: #ff451b;
+}
+body.dark .know_tm_resume .info_list ul li .short .job span{
+	color: #d3d7df;
+}
+body.dark .progress_inner .background{
+	background: #777a7f;
+}
+body.dark .circular_progress_bar .list_inner:after{
+	border-color: #777a7f;
+}
+body.dark .progress_inner span.label{
+	color: #fff;
+}
+body.dark .know_tm_portfolio .portfolio_filter ul li a{
+	color: #fff;
+}
+body.dark .know_tm_portfolio .portfolio_filter ul li a:hover,
+body.dark .know_tm_portfolio .portfolio_filter ul li a.current{
+	color: #ff451b;
+}
+body.dark .know_tm_services .service_list ul li .list_inner{
+	background-color: #5c5d64;
+	box-shadow: none;
+}
+body.dark .know_tm_services .service_list ul li .list_inner:hover{
+	box-shadow: none;
+}
+body.dark .know_tm_testimonials .testimonials_list .list_inner{
+	background-color: #5b5c64;
+	border-radius: 15px;
+}
+
+body.dark .know_tm_testimonials .testimonials_list .list_inner .in{
+	box-shadow: none;
+}
+body.dark .know_tm_news .news_list ul li .details .title a{
+	color: #fff;
+}
+body.dark .know_tm_news .news_list ul li .details .title a:hover{
+	color: #ff451b;
+}
+body.dark .know_tm_news .news_list ul li .details{
+	background-color: #5b5c64;
+	box-shadow: none;
+}
+body.dark .know_tm_modalbox .box_inner{
+	background-color: #494b50;
+}
+body.dark .know_tm_modalbox .main_details .detailbox .first{
+	color: #fff;
+}
+body.dark .know_tm_modalbox .main_details .detailbox span a{
+	color: #a7afbd;
+}
+body.dark .know_tm_hero_second .background_shape{
+	background-color: #3a3934;
+}
+body.dark .know_tm_extra_menu .list_in .center{
+	background-color: #494b50;
+	box-shadow: none;
+}
+body.dark .know_tm_extra_menu .list_in .list_icon{
+	box-shadow: none;
+}
+body.dark .know_tm_extra_menu .list_in .down_icon{
+	box-shadow: none;
+}
+body.dark .know_tm_extra_menu .list_in .center span{
+	color: #fff;
+}
+body.dark .know_tm_extra_menu .menu_list .unordered .unorderest_li.opened .list_in .down_icon,
+body.dark .know_tm_extra_menu .menu_list .unordered .unorderest_li .list_in:hover .down_icon{
+	background-color: #494b50;
+}
+body.dark .know_tm_extra_menu .menu_list .unordered .unorderest_li.opened .list_in .down_icon .svg,
+body.dark .know_tm_extra_menu .menu_list .unordered .unorderest_li .list_in:hover .down_icon .svg{
+	color: #848484;
+}
+body.dark .know_tm_extra_menu .menu_list .unordered .unorderest_li .details_wrapper{
+	background-color: #494b50;
+	box-shadow: none;
+}
+body.dark .know_tm_fixed_content .menubar ul li{
+	background-color: #494b50;
+}
+body.dark .know_tm_fixed_content .menubar ul li:hover{
+	background-color: #ff451b;
+}
+body.dark .know_tm_fixed_content .menubar ul li.active{
+	background-color: #ff451b;
+}
+body.dark .know_tm_fixed_content .menubar ul li span{
+	color: #fff;
+}
+body.dark .know_tm_fixed_content .infobar .extra{
+	background-color: #494b50;
+}
+body.dark .know_tm_fixed_content .mainbar{
+	background-color: #494b50;
+}
+body.dark .know_tm_fixed_content .infobar .extra .short span{
+	color: #a7afbd;
+}
+body.dark .know_tm_fixed_content .know_tm_testimonials .testimonials_list .list_inner{
+	padding: 30px;
+}
+body.dark .know_tm_contact .wrapper .left ul li .list_inner .short span a{
+	color: #a7afbd;
+}
+body.dark .know_tm_contact .wrapper .left ul li .list_inner .short span a:hover{
+	color: #ff451b;
+}
+@media(max-width: 480px){
+	body.dark .know_tm_news .news_list ul li .details{background: none;box-shadow: none;}
+}
